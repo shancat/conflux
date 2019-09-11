@@ -7,7 +7,7 @@
 <!--			</button>-->
 <!--			<h1>-->
 <!--				{{activeCollection.name}}-->
-<!--				<img src="/assets/images/icons/edit.png" />-->
+<!--				<img src="/conflux/assets/images/icons/edit.png" />-->
 <!--			</h1>-->
 <!--			<textarea placeholder="Enter collection description" ng-model="activeCollection.description"></textarea>-->
 <!--			<div class="columns">-->
@@ -52,7 +52,7 @@
 				<h5 ui-sref="collections">More Collections</h5>
 			</button>
 			<h1>
-				<span ui-sref="editName()" class="edit"><img src="/assets/images/icons/edit.png" /></span>
+				<span ui-sref="editName()" class="edit"><img src="/conflux/assets/images/icons/edit.png" /></span>
 				{{activeCollection.name}}
 			</h1>
 			<span>Collection created by Jane Doe 21 hours ago</span>
@@ -75,7 +75,7 @@
 								{{collection.videos.length}} videos • Public
 							</span>
 							<span ng-if="collection.id !== activeCollection.id" ui-sref="collectionEdit({ collectionId: collection.id })" class="edit">
-								<img src="/assets/images/icons/edit.png" />
+								<img src="/conflux/assets/images/icons/edit.png" />
 							</span>
 						</div>
 					</li>
