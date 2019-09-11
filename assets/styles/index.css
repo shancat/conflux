@@ -71,7 +71,7 @@ main {
 	width: 100vw;
 	transition: all .5s ease;
 	left: 0;
-	background: url('/assets/images/bg.png');
+	background: url('/conflux/assets/images/bg.png');
 	background-size: cover;
 	display: flex;
 }
