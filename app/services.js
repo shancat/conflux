@@ -252,7 +252,7 @@ app.factory('dataSvc', function() {
         {
             id: 1,
             title:"Jane the Virgin",
-            poster:"/assets/images/JaneTheVirgin.png",
+            poster:"/conflux/assets/images/JaneTheVirgin.png",
             rating: "TV-PG",
             userRating:5,
             description:"",
@@ -270,7 +270,7 @@ app.factory('dataSvc', function() {
         {
             id: 2,
             title:"Dear White People",
-            poster:"/assets/images/DearWhitePeople.png",
+            poster:"/conflux/assets/images/DearWhitePeople.png",
             rating: "TV-PG13",
             userRating:4,
             description:"",
@@ -288,7 +288,7 @@ app.factory('dataSvc', function() {
         {
             id: 3,
             title:"Parenthood",
-            poster:"/assets/images/Parenthood.png",
+            poster:"/conflux/assets/images/Parenthood.png",
             rating: "TV-PG",
             userRating:5,
             description:"",
@@ -306,7 +306,7 @@ app.factory('dataSvc', function() {
         {
             id: 4,
             title:"The Marvelous Mrs. Maisel",
-            poster:"/assets/images/MarvelousMrsMaisel.png",
+            poster:"/conflux/assets/images/MarvelousMrsMaisel.png",
             rating: "TV-PG",
             userRating:3,
             description:"",
@@ -324,7 +324,7 @@ app.factory('dataSvc', function() {
         {
             id: 5,
             title:"Psych",
-            poster:"/assets/images/psych.png",
+            poster:"/conflux/assets/images/psych.png",
             rating: "TV-PG",
             userRating:4,
             description:"",
@@ -360,7 +360,7 @@ app.factory('dataSvc', function() {
         {
             id: 7,
             title:"The Great British Baking Show",
-            poster:"/assets/images/GreatBritishBaking.png",
+            poster:"/conflux/assets/images/GreatBritishBaking.png",
             rating: "TV-PG",
             userRating:5,
             description:"",
@@ -378,7 +378,7 @@ app.factory('dataSvc', function() {
         {
             id: 8,
             title:"Bob Ross Painting Show",
-            poster:"/assets/images/BobRoss.png",
+            poster:"/conflux/assets/images/BobRoss.png",
             rating: "TV-PG",
             userRating:5,
             description:"",
@@ -396,7 +396,7 @@ app.factory('dataSvc', function() {
         {
             id: 9,
             title:"Fuller House",
-            poster:"/assets/images/FullerHouse.png",
+            poster:"/conflux/assets/images/FullerHouse.png",
             rating: "TV-PG",
             userRating:3,
             description:"",
@@ -414,7 +414,7 @@ app.factory('dataSvc', function() {
         {
             id: 10,
             title:"Adventure Time",
-            poster:"/assets/images/AdventureTime.png",
+            poster:"/conflux/assets/images/AdventureTime.png",
             rating: "TV-PG",
             userRating:5,
             description:"",
@@ -432,7 +432,7 @@ app.factory('dataSvc', function() {
         {
             id: 11,
             title:"Modern Family",
-            poster:"/assets/images/ModernFamily.png",
+            poster:"/conflux/assets/images/ModernFamily.png",
             rating: "TV-PG",
             userRating:4,
             description:"",
@@ -450,7 +450,7 @@ app.factory('dataSvc', function() {
         {
             id: 12,
             title:"Fresh Off the Boat",
-            poster:"/assets/images/FreshOffTheBoat.png",
+            poster:"/conflux/assets/images/FreshOffTheBoat.png",
             rating: "TV-PG",
             userRating:5,
             description:"",
@@ -468,7 +468,7 @@ app.factory('dataSvc', function() {
         {
             id: 13,
             title:"The Shining",
-            poster:"/assets/images/TheShining.png",
+            poster:"/conflux/assets/images/TheShining.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -486,7 +486,7 @@ app.factory('dataSvc', function() {
         {
             id: 14,
             title:"The Exorcist",
-            poster:"/assets/images/TheExorcist.png",
+            poster:"/conflux/assets/images/TheExorcist.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -504,7 +504,7 @@ app.factory('dataSvc', function() {
         {
             id: 15,
             title:"Rosemary's Baby",
-            poster:"/assets/images/RosemarysBaby.png",
+            poster:"/conflux/assets/images/RosemarysBaby.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -522,7 +522,7 @@ app.factory('dataSvc', function() {
         {
             id: 16,
             title:"Don't Look Now",
-            poster:"/assets/images/DontLookNow.png",
+            poster:"/conflux/assets/images/DontLookNow.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -540,7 +540,7 @@ app.factory('dataSvc', function() {
         {
             id: 17,
             title:"Inferno",
-            poster:"/assets/images/Inferno.png",
+            poster:"/conflux/assets/images/Inferno.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -558,7 +558,7 @@ app.factory('dataSvc', function() {
         {
             id: 18,
             title:"Paranormal Activity",
-            poster:"/assets/images/ParanormalActivity.png",
+            poster:"/conflux/assets/images/ParanormalActivity.png",
             rating: "R",
             userRating:2,
             description:"",
@@ -576,7 +576,7 @@ app.factory('dataSvc', function() {
         {
             id: 19,
             title:"Looper",
-            poster:"/assets/images/Looper.png",
+            poster:"/conflux/assets/images/Looper.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -594,7 +594,7 @@ app.factory('dataSvc', function() {
         {
             id: 20,
             title:"Space Between Us",
-            poster:"/assets/images/SpaceBetweenUs.png",
+            poster:"/conflux/assets/images/SpaceBetweenUs.png",
             rating: "PG-13",
             userRating:3,
             description:"",
@@ -612,7 +612,7 @@ app.factory('dataSvc', function() {
         {
             id: 21,
             title:"Us",
-            poster:"/assets/images/Us.png",
+            poster:"/conflux/assets/images/Us.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -630,7 +630,7 @@ app.factory('dataSvc', function() {
         {
             id: 22,
             title:"All the Money in the World",
-            poster:"/assets/images/AllTheMoney.png",
+            poster:"/conflux/assets/images/AllTheMoney.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -648,7 +648,7 @@ app.factory('dataSvc', function() {
         {
             id: 23,
             title:"Hard Candy",
-            poster:"/assets/images/HardCandy.png",
+            poster:"/conflux/assets/images/HardCandy.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -666,7 +666,7 @@ app.factory('dataSvc', function() {
         {
             id: 24,
             title:"Joy",
-            poster:"/assets/images/Joy.png",
+            poster:"/conflux/assets/images/Joy.png",
             rating: "PG-13",
             userRating:5,
             description:"",
@@ -684,7 +684,7 @@ app.factory('dataSvc', function() {
         {
             id: 25,
             title:"The Lobster",
-            poster:"/assets/images/Lobster.png",
+            poster:"/conflux/assets/images/Lobster.png",
             rating: "R",
             userRating:2,
             description:"",
@@ -702,7 +702,7 @@ app.factory('dataSvc', function() {
         {
             id: 26,
             title:"Moonlight",
-            poster:"/assets/images/Moonlight.png",
+            poster:"/conflux/assets/images/Moonlight.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -720,7 +720,7 @@ app.factory('dataSvc', function() {
         {
             id: 27,
             title:"Dismissed",
-            poster:"/assets/images/Dismissed.png",
+            poster:"/conflux/assets/images/Dismissed.png",
             rating: "PG-13",
             userRating:3,
             description:"",
@@ -738,7 +738,7 @@ app.factory('dataSvc', function() {
         {
             id: 28,
             title:"The Assassin",
-            poster:"/assets/images/Assassin.png",
+            poster:"/conflux/assets/images/Assassin.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -756,7 +756,7 @@ app.factory('dataSvc', function() {
         {
             id: 29,
             title:"Snatch",
-            poster:"/assets/images/Snatch.png",
+            poster:"/conflux/assets/images/Snatch.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -774,7 +774,7 @@ app.factory('dataSvc', function() {
         {
             id: 30,
             title:"August: Osage County",
-            poster:"/assets/images/august.png",
+            poster:"/conflux/assets/images/august.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -792,7 +792,7 @@ app.factory('dataSvc', function() {
         {
             id: 31,
             title:"Juno",
-            poster:"/assets/images/Juno.png",
+            poster:"/conflux/assets/images/Juno.png",
             rating: "PG-13",
             userRating:5,
             description:"",
@@ -810,7 +810,7 @@ app.factory('dataSvc', function() {
         {
             id: 32,
             title:"Suspiria",
-            poster:"/assets/images/suspiria.png",
+            poster:"/conflux/assets/images/suspiria.png",
             rating: "R",
             userRating:2,
             description:"",
@@ -828,7 +828,7 @@ app.factory('dataSvc', function() {
         {
             id: 33,
             title:"Ringu",
-            poster:"/assets/images/ringu.png",
+            poster:"/conflux/assets/images/ringu.png",
             rating: "R",
             userRating:3,
             description:"",
@@ -846,7 +846,7 @@ app.factory('dataSvc', function() {
         {
             id: 34,
             title:"Jacob's Ladder",
-            poster:"/assets/images/jacobsladder.png",
+            poster:"/conflux/assets/images/jacobsladder.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -864,7 +864,7 @@ app.factory('dataSvc', function() {
         {
             id: 35,
             title:"The Love Witch",
-            poster:"/assets/images/lovewitch.png",
+            poster:"/conflux/assets/images/lovewitch.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -882,7 +882,7 @@ app.factory('dataSvc', function() {
         {
             id: 36,
             title:"Dark Water",
-            poster:"/assets/images/darkwater.png",
+            poster:"/conflux/assets/images/darkwater.png",
             rating: "R",
             userRating:1,
             description:"",
@@ -900,7 +900,7 @@ app.factory('dataSvc', function() {
         {
             id: 37,
             title:"A Monster Calls",
-            poster:"/assets/images/amonstercalls.png",
+            poster:"/conflux/assets/images/amonstercalls.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -918,7 +918,7 @@ app.factory('dataSvc', function() {
         {
             id: 38,
             title:"The Omen",
-            poster:"/assets/images/theomen.png",
+            poster:"/conflux/assets/images/theomen.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -936,7 +936,7 @@ app.factory('dataSvc', function() {
         {
             id: 39,
             title:"Pan's Labyrinth",
-            poster:"/assets/images/panslabyrinth.png",
+            poster:"/conflux/assets/images/panslabyrinth.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -954,7 +954,7 @@ app.factory('dataSvc', function() {
         {
             id: 40,
             title:"Donnie Darko",
-            poster:"/assets/images/donniedarko.png",
+            poster:"/conflux/assets/images/donniedarko.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -972,7 +972,7 @@ app.factory('dataSvc', function() {
         {
             id: 41,
             title:"The Craft",
-            poster:"/assets/images/thecraft.png",
+            poster:"/conflux/assets/images/thecraft.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -990,7 +990,7 @@ app.factory('dataSvc', function() {
         {
             id: 42,
             title:"The Dead Zone",
-            poster:"/assets/images/deadzone.png",
+            poster:"/conflux/assets/images/deadzone.png",
             rating: "R",
             userRating:4,
             description:"",
@@ -1008,7 +1008,7 @@ app.factory('dataSvc', function() {
         {
             id: 43,
             title:"Bohemian Rhapsody",
-            poster:"/assets/images/bohemianrhapsody.png",
+            poster:"/conflux/assets/images/bohemianrhapsody.png",
             rating: "PG-13",
             userRating:5,
             description:"",
@@ -1044,7 +1044,7 @@ app.factory('dataSvc', function() {
         {
             id: 45,
             title:"Vice",
-            poster:"/assets/images/vice.png",
+            poster:"/conflux/assets/images/vice.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -1080,7 +1080,7 @@ app.factory('dataSvc', function() {
         {
             id: 47,
             title:"A Simple Favor",
-            poster:"/assets/images/asimplefavor.png",
+            poster:"/conflux/assets/images/asimplefavor.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -1098,7 +1098,7 @@ app.factory('dataSvc', function() {
         {
             id: 48,
             title:"Lady Bird",
-            poster:"/assets/images/ladybird.png",
+            poster:"/conflux/assets/images/ladybird.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -1116,7 +1116,7 @@ app.factory('dataSvc', function() {
         {
     		id: 49,
     		title:"Heathers",
-    		poster:"/assets/images/heathers.png",
+    		poster:"/conflux/assets/images/heathers.png",
     		rating: "R",
     		userRating:2,
     		description:"",
@@ -1134,7 +1134,7 @@ app.factory('dataSvc', function() {
     	{
     		id: 50,
     		title:"Fargo",
-    		poster:"/assets/images/fargo.png",
+    		poster:"/conflux/assets/images/fargo.png",
     		rating: "R",
     		userRating:5,
     		description:"",
@@ -1152,7 +1152,7 @@ app.factory('dataSvc', function() {
     	{
     		id: 51,
     		title:"Little Miss Sunshine",
-    		poster:"/assets/images/littlemisssunshine.png",
+    		poster:"/conflux/assets/images/littlemisssunshine.png",
     		rating: "R",
     		userRating:5,
     		description:"",
@@ -1170,7 +1170,7 @@ app.factory('dataSvc', function() {
     	{
     		id: 52,
     		title:"Office Space",
-    		poster:"/assets/images/officespace.png",
+    		poster:"/conflux/assets/images/officespace.png",
     		rating: "R",
     		userRating:4,
     		description:"",
@@ -1394,12 +1394,12 @@ app.factory('dataSvc', function() {
                 {
                     id: 1,
                     name: 'Me',
-                    avatar: '/assets/images/icons/user-r2d2.png'
+                    avatar: '/conflux/assets/images/icons/user-r2d2.png'
                 },
                 {
                     id: 2,
                     name: 'Emma',
-                    avatar: '/assets/images/icons/user-unicorn.png'
+                    avatar: '/conflux/assets/images/icons/user-unicorn.png'
                 }
             ]
         },
@@ -1411,17 +1411,17 @@ app.factory('dataSvc', function() {
                 {
                     id: 1,
                     name: 'Me',
-                    avatar: '/assets/images/icons/user-r2d2.png'
+                    avatar: '/conflux/assets/images/icons/user-r2d2.png'
                 },
                 {
                     id: 2,
                     name: 'Jeremy',
-                    avatar: '/assets/images/icons/user-unicorn.png'
+                    avatar: '/conflux/assets/images/icons/user-unicorn.png'
                 },
                 {
                     id: 3,
                     name: 'Chrissy',
-                    avatar: '/assets/images/icons/user-unicorn.png'
+                    avatar: '/conflux/assets/images/icons/user-unicorn.png'
                 }
             ]
         },
@@ -1433,12 +1433,12 @@ app.factory('dataSvc', function() {
                 {
                     id: 1,
                     name: 'Me',
-                    avatar: '/assets/images/icons/user-r2d2.png'
+                    avatar: '/conflux/assets/images/icons/user-r2d2.png'
                 },
                 {
                     id: 2,
                     name: 'Angela',
-                    avatar: '/assets/images/icons/user-unicorn.png'
+                    avatar: '/conflux/assets/images/icons/user-unicorn.png'
                 }
             ]
         }
@@ -1588,61 +1588,61 @@ app.factory('dataSvc', function() {
                 id:3,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/lifeofpi.png"
+                image: "conflux/assets/images/lifeofpi.png"
             },
             {
                 id:8,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/americanbeauty.png"
+                image: "conflux/assets/images/americanbeauty.png"
             },
             {
                 id:9,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/et.png"
+                image: "conflux/assets/images/et.png"
             },
             {
                 id:10,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/theshining.png"
+                image: "conflux/assets/images/theshining.png"
             },
             {
                 id:11,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/lordoftherings.png"
+                image: "conflux/assets/images/lordoftherings.png"
             },
             {
                 id:12,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/breakfastattiffanys.png"
+                image: "conflux/assets/images/breakfastattiffanys.png"
             },
             {
                 id:13,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/thematrix.png"
+                image: "conflux/assets/images/thematrix.png"
             },
             {
                 id:14,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/interstellar.png"
+                image: "conflux/assets/images/interstellar.png"
             },
             {
                 id:15,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/panslabyrinth-scene.png"
+                image: "conflux/conflux/conflux/assets/images/panslabyrinth-scene.png"
             },
         //     {
         //         id:16,
         //         questionType:3,
         // 		stem: "How does this make you feel?",
-        //         image: "assets/images/pirates.png"
+        //         image: "conflux/conflux/assets/images/pirates.png"
         //     },
             {
                 id:17,
@@ -1654,25 +1654,25 @@ app.factory('dataSvc', function() {
                 id:18,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/harryp.png"
+                image: "conflux/assets/images/harryp.png"
             },
         //     {
         //         id:19,
         //         questionType:3,
         // 		stem: "How does this make you feel?",
-        //         image: "assets/images/soundofmusic.png"
+        //         image: "conflux/assets/images/soundofmusic.png"
         //     },
             {
                 id:20,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/avatar.png"
+                image: "conflux/assets/images/avatar.png"
             },
             {
                 id:21,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/madmax.png"
+                image: "conflux/assets/images/madmax.png"
             }
         ];
         
@@ -1681,42 +1681,42 @@ app.factory('dataSvc', function() {
                 id:4,
                 questionType:4,
                 stem:"Go with your gut.",
-                images: ["assets/images/ModernFamily.png","assets/images/Parenthood.png","assets/images/FullerHouse.png","assets/images/FreshOffTheBoat.png"],
+                images: ["conflux/assets/images/ModernFamily.png","conflux/assets/images/Parenthood.png","conflux/assets/images/FullerHouse.png","conflux/assets/images/FreshOffTheBoat.png"],
                 category: "The Epitome of Dysfunctional Family TV"
             },
             {
                 id:35,
                 questionType:4,
                 stem:"Trust your instinct.",
-                images: ["assets/images/ringu.png","assets/images/theomen.png","assets/images/TheExorcist.png","assets/images/RosemarysBaby.png"],
+                images: ["conflux/assets/images/ringu.png","conflux/assets/images/theomen.png","conflux/assets/images/TheExorcist.png","conflux/assets/images/RosemarysBaby.png"],
                 category: "Slightly Vintage Scary Movies"
             },
             {
                 id:22,
                 questionType:4,
                 stem:"Quick yes or no.",
-                images: ["assets/images/astarisborn.png","assets/images/bohemianrhapsody.png","assets/images/thelastfiveyears.png","assets/images/lalaland.png"],
+                images: ["conflux/assets/images/astarisborn.png","conflux/assets/images/bohemianrhapsody.png","conflux/assets/images/thelastfiveyears.png","conflux/assets/images/lalaland.png"],
                 category: "Modern movie musicals"
             },
             {
                 id:23,
                 questionType:4,
                 stem:"Thumbs up, thumbs down.",
-                images: ["assets/images/Juno.png","assets/images/littlemisssunshine.png","assets/images/sunshinecleaning.png","assets/images/awaywego.png"],
+                images: ["conflux/assets/images/Juno.png","conflux/assets/images/littlemisssunshine.png","conflux/assets/images/sunshinecleaning.png","conflux/assets/images/awaywego.png"],
                 category: "Artsy movies but not in a pretentious way"
             },
             {
                 id:24,
                 questionType:4,
                 stem:"What does your gut say?",
-                images: ["assets/images/matrix.png","assets/images/inception.png","assets/images/shutterisland.png","assets/images/memento.png"],
+                images: ["conflux/assets/images/matrix.png","conflux/assets/images/inception.png","conflux/assets/images/shutterisland.png","conflux/assets/images/memento.png"],
                 category: "Movies you’ll need explained to you"
             },
             {
                 id:25,
                 questionType:4,
                 stem:"Think quick!",
-                images: ["assets/images/twilight.png","assets/images/harrypotter.png","assets/images/thecraft.png","assets/images/eragon.png"],
+                images: ["conflux/assets/images/twilight.png","conflux/assets/images/harrypotter.png","conflux/assets/images/thecraft.png","conflux/assets/images/eragon.png"],
                 category: "Some supernatural youths"
             }
         ];
@@ -1778,37 +1778,37 @@ app.factory('dataSvc', function() {
                 id:29,
                 questionType:8,
                 stem:"This or that?",
-                options: ["assets/images/ladybird.png","assets/images/Us.png"]
+                options: ["conflux/assets/images/ladybird.png","conflux/assets/images/Us.png"]
             },
             {
                 id:30,
                 questionType:8,
                 stem:"This or that?",
-                options: ["assets/images/vice.png","assets/images/Juno.png"]
+                options: ["conflux/assets/images/vice.png","conflux/assets/images/Juno.png"]
             },
             {
                 id:31,
                 questionType:8,
                 stem:"This or that?",
-                options: ["assets/images/Moonlight.png","assets/images/heathers.png"]
+                options: ["conflux/assets/images/Moonlight.png","conflux/assets/images/heathers.png"]
             },
             {
                 id:32,
                 questionType:8,
                 stem:"This or that?",
-                options: ["assets/images/TICKLED.png","assets/images/Joy.png"]
+                options: ["conflux/assets/images/TICKLED.png","conflux/assets/images/Joy.png"]
             },
             {
                 id:33,
                 questionType:8,
                 stem:"This or that?",
-                options: ["assets/images/lalaland.png","assets/images/ParanormalActivity.png"]
+                options: ["conflux/assets/images/lalaland.png","conflux/assets/images/ParanormalActivity.png"]
             },
             {
                 id:33,
                 questionType:8,
                 stem:"This or that?",
-                options: ["assets/images/littlemisssunshine.png","assets/images/inception.png"]
+                options: ["conflux/assets/images/littlemisssunshine.png","conflux/assets/images/inception.png"]
             }
         ];
         
