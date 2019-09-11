@@ -1,0 +1,96 @@
+<!-- Videos By Category -->
+<section ng-repeat="category in categories | filter: {isVisible:true} | orderBy: 'sortOrder'"
+		 ng-if="category.videos.length" class="video-category">
+	<header class="columns">
+		<div class="category-details">
+			<h5>{{category.videos.length}} Videos</h5>
+			<h3>{{showingRelatedVideos ? 'More Like This' : category.name}}</h3>
+		</div>
+		<div class="hide" ng-if="!showingRelatedVideos">
+			<h5 ng-if="category.showConfirmationMsg">
+				Are you sure you want to hide {{category.name}}? &nbsp;
+				<strong ng-click="hide(category)">Yes</strong>
+				<strong ng-click="cancelConfirmation(category)">No</strong>
+				&nbsp;&nbsp;
+			</h5>
+			<span class="btn" ng-click="category.showConfirmationMsg = true">✕</span>
+		</div>
+	</header>
+	<div class="posters">
+		<div ng-repeat="video in category.videos | limitTo:category.limit" class="poster"
+			 ng-if="video.id !== relatedVideoId"
+			 ng-click="openVideo(video)">
+			<img ng-src="{{video.poster}}"/>
+		</div>
+	</div>
+	<div class="show-more" ng-hide="showingRelatedVideos">
+		<div class="bg-container">
+			<div class="bg">&nbsp;</div>
+		</div>
+		<div class="text" ng-hide="category.videos.length <= ROW_LENGTH">
+			<ul class="separator">
+				<li ng-if="category.limit < category.videos.length">
+					<h5 ng-click="showMore(category)">Show {{getShowMoreNum(category)}} more</h5>
+				</li>
+				<li ng-if="category.limit < category.videos.length">
+					<h5 ng-click="showAll(category)">Show all {{category.videos.length}}</h5>
+				</li>
+				<li ng-if="category.limit > ROW_LENGTH">
+					<h5 ng-click="collapse(category)">Collapse</h5>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- Filtered Videos -->
+<section class="video-category filtered-videos" ng-if="videos">
+	<h5>Showing {{videos.length}} {{videos.length == 1 ? 'Result' : 'Results'}}<span ng-if="filterQuery"> for</span></h5>
+	<h2 ng-if="filterQuery" class="filter-query">"{{filterQuery}}"</h2>
+	<br/>
+	<div class="posters">
+		<div ng-repeat="video in videos" class="poster"
+			 ng-click="openVideo(video)">
+			<img ng-src="{{video.poster}}"/>
+		</div>
+	</div>
+	<div ng-if="!videos.length" class="no-results">
+		No videos match your filter
+	</div>
+</section>
+
+<!-- Synced Videos -->
+<section class="video-category synced-videos" ng-if="syncedVideos">
+	<div class="posters">
+		<div ng-repeat="video in syncedVideos" class="poster"
+			 ng-click="openVideo(video)">
+			<img ng-src="{{video.poster}}"/>
+		</div>
+	</div>
+</section>
+
+<!-- Collection Videos -->
+<section class="video-category collection-videos" ng-class="{'edit':edit}" ng-if="collectionVideos">
+	<div class="posters">
+		<div ng-repeat="video in collectionVideos" class="poster"
+			 ng-click="edit || openVideo(video)">
+			<img ng-src="{{video.poster}}"/>
+			<div class="edit-btn pink-bg" ng-if="edit">✕</div>
+		</div>
+	</div>
+</section>
+
+<!-- Search Results -->
+<section class="video-category search-results" ng-if="searchResults">
+	<h5>Showing {{searchResults.length}} {{searchResults.length == 1 ? 'Result' : 'Results'}}<span ng-if="query"> for</span></h5>
+	<h2 ng-if="query" class="filter-query">"{{query}}"</h2>
+	<div class="posters">
+		<div ng-repeat="video in searchResults" class="poster"
+			 ng-click="openVideo(video)">
+			<img ng-src="{{video.poster}}"/>
+		</div>
+	</div>
+	<div ng-if="!searchResults.length" class="no-results">
+		{{query ? "No videos match your search" : "Waiting for search..."}}
+	</div>
+</section>

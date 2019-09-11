@@ -1,0 +1,46 @@
+<header class="page">
+	<h1>
+		Syncronize your browsing habits with friends & family to find contents you’ll both enjoy
+	</h1>
+	<div class="columns btn-group">
+	    <div>
+            <button ng-click="addGroup()">
+                <h5>Add Group</h5>
+            </button>
+	    </div>
+        <div class="dropdown" ng-if="syncGroups.length > 1">
+            <button ng-click="openDropdown()" class="dropdown-btn">
+                Switch Group
+            </button>
+            <div id="dropdown" class="dropdown-content">
+                <a ng-click="setActiveGroup(group)" ng-if="group !== activeSyncGroup" ng-repeat="group in syncGroups">{{group.name}}</a>
+            </div>
+        </div>
+	</div>
+</header>
+<section class="sync-groups">
+    <ul>
+        <li ng-repeat="user in activeSyncGroup.users">
+            <img ng-src="{{user.avatar}}" />
+            <!--<div class="user-icon">{{getLetter(user.name)}}</div>-->
+            <h5 class="name">{{user.name}}</span>
+        </li>
+        <li class="add" ng-click="addUser()">
+            <img src="/assets/images/icons/user-add-white.png" />
+        </li>
+    </ul>
+    <h2>
+        <span class="name">{{activeSyncGroup.name}}</span> &nbsp;
+        <input ng-model="activeSyncGroup.name" />
+        <a class="edit" ng-click="editGroupName()"><img src="/assets/images/icons/edit.png" /></a>&nbsp;
+        <a class="delete" ng-click="confirmDeleteGroup()">✕</a>
+    </h2>
+    <div class="confirm-delete">
+        <h5>
+            Are you sure you want to delete this group? &nbsp;
+            <strong ng-click="deleteGroup(activeSyncGroup)">Yes</strong> &nbsp;
+            <strong ng-click="toggleDelete()">No</strong>
+        </h5>
+    </div>
+</section>
+<videos synced-videos="activeSyncGroup.syncedVideos"></videos>

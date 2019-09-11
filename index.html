@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Roboto:400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/services.js"></script>
+	<script src="app/directives.js"></script>
+	<title>Conflux</title>
+</head>
+<body ng-app="confluxApp" ng-controller="indexCtrl">
+	<div id="container">
+		<aside class="sidebar">
+			<nav>
+				<ul>
+					<li class="logo" ui-sref="browse" ng-click="closeSearch()"><h1>Conflux</h1></li>
+					<li ng-repeat="item in primaryNav" ng-click="closeSearch()">
+						<a ui-sref="{{item.state}}" ui-sref-active="active">
+							{{item.name}}
+						</a>
+					</li>
+				</ul>
+				<!--<li class="icon" id="settings-icon" ng-click="closeSearch()">-->
+				<!--	<a><img src="/assets/images/icons/gear.png" /></a>-->
+				<!--</li>-->
+			</nav>
+			<span class="tagline">
+				<span>[ Kon-Flux ] &nbsp;n.</span> &nbsp; Where streams meet
+			</span>
+		</aside>
+		<main>
+			<div id="search-outer">
+				<div id="icon-container" ng-click="openSearch()">
+					<img src="/assets/images/icons/search.png" />
+				</div>
+				<div id="search-inner">
+					<input class="search" id="search-input" type="text" ng-model="searchQuery" placeholder="Search for a video..." />
+					<div class="close" ng-click="closeSearch()">✕</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<videos ng-if="isSearchActive" search-results="videos" query="searchQuery"></videos>
+				<div ng-if="!isSearchActive" ui-view></div>
+			</div>
+		</main>
+	</div>
+	<div id="single-video-container">
+		<single-video></single-video>
+	</div>
+</body>
+</html>

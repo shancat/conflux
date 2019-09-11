@@ -1,0 +1,131 @@
+<div class="wayfinder">
+	<header class="page" ng-if="question.questionType == questionTypes.QUIZTYPE">
+		<h1>Wayfinder</h1>
+		<br/>
+		<h2>Take a short quiz to find the 3 best streaming options to suit your current mood</h1>
+	</header>
+	<div class="question type-{{question.questionType}}">
+		
+		<!-- Question Stem -->
+		<div ng-hide="showResults || question.questionType == questionTypes.QUIZTYPE" class="stem">
+			<span class="number">{{questionNum}} out of {{questions.length-1}}</span>
+			<h2>{{question.stem}}</h2>
+		</div>
+		
+		<!-- Type: Quiz Type -->
+		<div ng-if="question.questionType == questionTypes.QUIZTYPE">
+			<ul>
+				<li ng-repeat="option in question.options">
+					<span ng-click="nextQuestion()">{{option}}</span>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Type: Movie or TV -->
+		<div ng-if="question.questionType == questionTypes.MOVIETV">
+			<ul>
+				<li ng-repeat="option in question.options">
+					<button ng-click="nextQuestion()">{{option}}</button>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Type: Aesthetic -->
+		<div ng-if="question.questionType == questionTypes.AESTHETIC" class="inner">
+			<div class="container">
+				<img ng-src="{{question.image}}" />
+			</div>
+			<div class="choices">
+				<ul class="icons">
+					<li><img class="icon" src="/assets/images/icons/smile-1.png" ng-click="nextQuestion()" /></li>
+					<li><img class="icon" src="/assets/images/icons/smile-2.png" ng-click="nextQuestion()" /></li>
+					<li><img class="icon" src="/assets/images/icons/smile-3.png" ng-click="nextQuestion()" /></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Type: Thumbs Up -->
+		<div ng-if="question.questionType == questionTypes.THUMBSUP" class="inner">
+			<div class="container">
+				<ul>
+					<li ng-repeat="image in question.images">
+						<img ng-src="{{image}}" />
+					</li>
+				</ul>
+				<h1 class="category">{{question.category}}</h1>
+			</div>
+			<div class="choices">
+				<ul class="icons">
+					<li><img class="icon" src="/assets/images/icons/thumbs-up.png" ng-click="nextQuestion()" /></li>
+					<li><img class="icon" src="/assets/images/icons/thumbs-down.png" ng-click="nextQuestion()" /></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Type: Multiselect -->
+		<div ng-if="question.questionType == questionTypes.MULTISELECT" class="inner">
+			<div class="container">
+				<ul>
+					<li ng-repeat="option in question.options">
+						<div class="circle" ng-class="{'active':active}" ng-click="active = !active">
+							{{option}}
+						</div>
+					</li>
+				</ul>
+			</div>
+			<span class="done" ng-click="nextQuestion()">Next</span>
+		</div>
+		
+		<!-- Type: Slider -->
+		<div ng-if="question.questionType == questionTypes.SLIDER" class="inner">
+			<div class="container">
+				<div ng-repeat="pair in question.optionPairs" class="pair">
+					  <span class="left">{{pair[0]}}</span>
+					  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+					  <span class="right">{{pair[1]}}</span>
+				</div>
+			</div>
+			<span class="done" ng-click="nextQuestion()">Next</span>
+		</div>
+		
+		<!-- Type: Qualifiers -->
+		<div ng-if="question.questionType == questionTypes.QUALIFIERS" class="inner">
+			<div class="container">
+				<ul>
+					<li ng-repeat="option in question.options">
+			  			<button ng-class="{'active':active}" ng-click="active = !active">{{option}}</button>
+					</li>
+				</ul>
+			</div>
+			<span class="done" ng-click="nextQuestion()">Next</span>
+		</div>
+		
+		<!-- Type: Versus -->
+		<div ng-if="question.questionType == questionTypes.VERSUS" class="inner">
+			<div class="container">
+				<div class="inner-container">
+					<div>
+						<img ng-src="{{question.options[0]}}" ng-click="nextQuestion()" />
+					</div>
+					<div class="vs">vs</div>
+					<div>
+						<img ng-src="{{question.options[1]}}" ng-click="nextQuestion()" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="results" ng-if="showResults">
+		<span>Wayfinder Results</span>
+		<h2>3 Best Streaming Options to Watch Now</h2>
+		<ul>
+			<li><img src="/assets/images/Lobster.png" /></li>
+			<li><img src="/assets/images/Moonlight.png" /></li>
+			<li><img src="/assets/images/Assassin.png" /></li>
+		</ul>
+		<div class="retake">
+			<span ui-sref="wayfinder">Take Again</span>
+		</div>
+	</div>
+</div>

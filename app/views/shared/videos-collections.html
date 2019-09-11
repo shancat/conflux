@@ -1,0 +1,17 @@
+<div class="collections-container">
+	<section ng-repeat="collection in collections" class="video-collection">
+		<ul class="posters" ui-sref="collection({ collectionId: collection.id })">
+			<li ng-repeat="video in collection.videos | limitTo:5" class="poster">
+				<img src="{{video.poster}}" />
+			</li>
+		</ul>
+		<div class="info">
+			<ul class="separator">
+				<li><h5>{{collection.videos.length}} Videos</h5></li>
+				<li><h5>{{collection.likes}} Likes</h5></li>
+				<li><h5>{{collection.comments.length}} {{collection.comments.length == 1 ? 'Comment' : 'Comments'}}</h5></li>
+			</ul>
+			<h2 ui-sref="collection({ collectionId: collection.id })">{{collection.name}}</h2>
+		</div>
+	</section>	
+</div>

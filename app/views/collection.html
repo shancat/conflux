@@ -1,0 +1,24 @@
+<section class="single-collection">
+	<div class="columns">
+		<section class="details">
+			<button ui-sref="collections">
+				<h5>More Collections</h5>
+			</button>
+			<h1>{{collection.name}}</h1>
+			<span>Collection created by Jane Doe 21 hours ago</span>
+			<p class="desc">{{collection.description}}</p>
+		</section>
+		<section>
+			<videos collection-videos="collection.videos"></videos>
+			<div class="comments">
+				<h5>{{collection.comments.length}} Comments</h5>
+				<div ng-repeat="comment in collection.comments" class="comment columns">
+					<div class="icon">
+						<img src="/assets/images/icons/user-generic.png" />
+					</div>
+					<div class="text">{{comment.text}}</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>

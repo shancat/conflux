@@ -1,0 +1,29 @@
+<section class="filters" ng-class={'options-open':filterPaneOpen}>
+	<ul class="main-filters">
+		<li ng-repeat="filter in filters"
+			ng-class="{'active':filter.active,'open':filter==expandedFilter,'closed':expandedFilter && filter!==expandedFilter}">
+			<a ng-click="!(filterPaneOpen || searchOpen) ? (filter.type == filterTypes.toggle ? filterVideos(filter) : toggleFilterPane(filter)) : null">{{filter.name}}</a>
+		</li>
+		<li ng-if="activeFilters.length" ng-class="{'closed':expandedFilter && filter!==expandedFilter}">
+			<a ng-click="!(filterPaneOpen || searchOpen) ? clearFilters() : null">✕</a>
+		</li>
+	</ul>
+	<div ng-class="{'open':filterPaneOpen}" class="pane">
+		<div ng-if="filterPaneOpen">
+			<h5>
+				Filter &nbsp; > &nbsp;{{expandedFilter.name !== 'Content' ? expandedFilter.name : ''}}
+				<span ng-if="expandedFilter.type == filterTypes.exclude">Exclude Content from Results</span>
+			</h5>
+			<ul class="filter-options">
+				<li ng-repeat="value in expandedFilter.values"
+					ng-class="{'active':value.active,'strikethrough':expandedFilter.type == filterTypes.exclude}">
+					<a ng-click="filterVideos(expandedFilter, value, $index)"><span>{{value.name}}</span></a>
+				</li>
+			</ul>
+			<div class="save-links">
+				<a ng-click="clearSelections(expandedFilter)" class="clear">Clear</a>
+				<a ng-click="toggleFilterPane()" class="save">Save and Close</a>
+			</div>
+		</div>
+	</div>
+</section>

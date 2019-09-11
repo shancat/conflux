@@ -1,0 +1,136 @@
+<div class="columns video-body">
+    <div class="single-poster">
+        <img src="{{video.poster}}" />
+    </div>
+    <div class="main-content">
+        <div class="close">
+        	<a ng-click="close()">✕</a>
+        </div>
+        <section class="details">
+            <h1>{{video.title}} ({{video.year}})</h1>
+            <ul class="info">
+                <li class="user-rating">
+                    <star-rating count="video.userRating"></star-rating>
+                </li>
+                <li>
+                    <img src="/assets/images/icons/rating-rotten.png" />
+                    79%
+                </li>
+                <li>
+                    <img src="/assets/images/icons/rating-meta.png" />
+                    63
+                </li>
+                <li>
+                    <img src="/assets/images/icons/rating-imdb.png" />
+                    8.5
+                </li>
+                <!--<li><h5>{{video.rating}}</h5></li>-->
+                <!--<li class="genere">-->
+                <!--    <h5>-->
+                <!--        <span ng-repeat="g in video.genre">-->
+                <!--            {{g}}<span ng-if="!$last">,&nbsp;</span>-->
+                <!--        </span>-->
+                <!--    </h5>-->
+                <!--</li>-->
+                <!--<li ng-if="video.length"><h5>{{video.length}} mins</h5></li>-->
+            </ul>
+            <div class="watch-options columns">
+                <div class="play-btn" ng-click="openPlayer('http://netflix.com')">
+                    <span class="icon">&#9654;</span>
+                    <h2>Watch On</h2>
+                    <img class="player-icon" src="/assets/images/icons/netflix.png" />
+                </div>
+                <div class="other-options">
+                    <ul>
+                        <li><img ng-click="openPlayer('http://hulu.com')" class="player-icon" src="/assets/images/icons/hulu.png" /></li>
+                        <li><img ng-click="openPlayer('https://amazon.com/Amazon-Video/b/?node=2858778011')" class="player-icon" src="/assets/images/icons/prime.png" /></li>
+                        <li><img ng-click="openPlayer('http://tubitv.com')" class="player-icon" src="/assets/images/icons/tubi.png" /></li>
+                    </ul>
+                    <h5>Also Available On</h5>
+                </div>
+            </div>
+            <div class="quality columns">
+                <div class="columns">
+                    <div>
+                        <img src="/assets/images/icons/dolby.png" />
+                    </div>
+                    <ul>
+                        <li><h5>Netflix</h5></li>
+                        <li><h5>Hulu</h5></li>
+                        <li><h5>Prime</h5></li>
+                    </ul>
+                </div>
+                <div class="columns">
+                    <div>
+                        <img src="/assets/images/icons/4k.png" />
+                    </div>
+                    <ul>
+                        <li><h5>Netflix</h5></li>
+                        <li><h5>Tubi</h5></li>
+                    </ul>
+                </div>
+                <div class="columns">
+                    <div>
+                        <img src="/assets/images/icons/cc.png" />
+                    </div>
+                    <ul>
+                        <li><h5>Netflix</h5></li>
+                        <li><h5>Prime</h5></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="synopsis">
+            <h5>Synopsis</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque purus vitae quam accumsan, vel imperdiet nunc ullamcorper. Phasellus ut ante at quam dapibus varius vitae vel tortor. Ut tincidunt augue augue, et pulvinar sem hendrerit ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </section>
+        <section class="crew columns">
+            <div>
+                <div>
+                    <h5>Director</h5>
+                    <ul>
+                        <li>Jane Doe</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Starring</h5>
+                    <ul>
+                        <li>James Smith</li>
+                        <li>Abigal Rogers</li>
+                        <li>John Jeremy</li>
+                        <li>Shaina Johnson</li>
+                        <li>Jane Ryan</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Country</h5>
+                    <ul>
+                        <li>USA</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>Studio</h5>
+                    <ul>
+                        <li>USA</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Genre</h5>
+                    <ul>
+                        <li ng-repeat="genre in video.genre">{{genre}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Language</h5>
+                    <ul>
+                        <li ng-repeat="language in video.language">{{language}}</li>
+                    </ul>
+                </div>
+            </div>        </section>
+        <section class="related-videos">
+            <videos categories="categories" related-video-id="video.id"></videos>
+        </section>
+    </div>
+</div>

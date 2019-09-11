@@ -1,0 +1,95 @@
+
+<!--<div class="columns collection-edit">-->
+<!--	<section class="edit-column">-->
+<!--		<section class="form">-->
+<!--			<button ui-sref="collections">-->
+<!--				<h5>More Collections</h5>-->
+<!--			</button>-->
+<!--			<h1>-->
+<!--				{{activeCollection.name}}-->
+<!--				<img src="/assets/images/icons/edit.png" />-->
+<!--			</h1>-->
+<!--			<textarea placeholder="Enter collection description" ng-model="activeCollection.description"></textarea>-->
+<!--			<div class="columns">-->
+<!--				<div class="columns">-->
+<!--					<input type="checkbox">-->
+<!--					<h5>Public Collections</h5>-->
+<!--				</div>-->
+<!--				<div class="btns">-->
+<!--					<button class="save" ng-click="saveCollection()">-->
+<!--						<h5>Save Collection</h5>-->
+<!--					</button>-->
+<!--					<button class="close">✕</button>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--		<section class="videos">-->
+<!--			<div class="add-movie">-->
+<!--				<input type="text" placeholder="Enter a video name" />-->
+<!--			</div>-->
+<!--			<videos collection-videos="activeCollection.videos" edit="true"></videos>-->
+<!--		</section>-->
+<!--	</section>-->
+<!--	<section class="my-collections pink-bg">-->
+<!--		<h5>My Collections</h5>-->
+<!--		<div ng-repeat="collection in myCollections" class="collection">-->
+<!--			<div class="columns">-->
+<!--				<div ui-sref="collection({ collectionId: collection.id })" class="details">-->
+<!--					<h2>{{collection.name}}</h2>-->
+<!--					<h5>{{"Public"}} Collection</h5>-->
+<!--					<h5>{{collection.videos.length}} Videos</h5>-->
+<!--				</div>-->
+<!--				<div ui-sref="collectionEdit({ collectionId: collection.id })" class="edit"><img src="/assets/images/icons/edit.png" /></div>-->
+<!--			</h2>-->
+<!--		</div>-->
+<!--	</section>-->
+<!--</div>-->
+
+<section class="single-collection edit">
+	<div class="columns">
+		<section class="details">
+			<button>
+				<h5 ui-sref="collections">More Collections</h5>
+			</button>
+			<h1>
+				<span ui-sref="editName()" class="edit"><img src="/assets/images/icons/edit.png" /></span>
+				{{activeCollection.name}}
+			</h1>
+			<span>Collection created by Jane Doe 21 hours ago</span>
+			<div class="desc">
+				<textarea ng-model="activeCollection.description" placeholder="Enter a description for your collection"></textarea>
+			</div>
+			<div class="btns">
+				<button class="save" ng-click="saveCollection()">
+					<h5>Save Collection</h5>
+				</button>
+				<button class="close">✕</button>
+			</div>
+			<section class="my-collections pink-bg">
+				<h5>My Collections</h5>
+				<ul>
+					<li ng-repeat="collection in myCollections">
+						<div class="columns">
+							<span  ng-disabled="true" ui-sref="collection({ collectionId: collection.id })" class="name">
+								{{collection.name}}<br/>
+								{{collection.videos.length}} videos • Public
+							</span>
+							<span ng-if="collection.id !== activeCollection.id" ui-sref="collectionEdit({ collectionId: collection.id })" class="edit">
+								<img src="/assets/images/icons/edit.png" />
+							</span>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="videos">
+			<div class="add-movie">
+				<input type="text" placeholder="Search for a video to add" />
+			</div>
+			<videos ng-if="activeCollection.videos.length > 0" collection-videos="activeCollection.videos" edit="true"></videos>
+			<div class="no-videos" ng-if="activeCollection.videos.length < 1">
+				<div>Collection empty</div>
+			</div>
+		</section>
+	</div>
+</section>
