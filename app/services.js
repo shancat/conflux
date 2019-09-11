@@ -342,7 +342,7 @@ app.factory('dataSvc', function() {
         {
             id: 6,
             title:"Will and Grace",
-            poster:"/assets/images/WillAndGrace.png",
+            poster:"/conflux/assets/images/WillAndGrace.png",
             rating: "TV-PG13",
             userRating:3,
             description:"",
@@ -1636,19 +1636,19 @@ app.factory('dataSvc', function() {
                 id:15,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/conflux/conflux/assets/images/panslabyrinth-scene.png"
+                image: "conflux/assets/images/panslabyrinth-scene.png"
             },
         //     {
         //         id:16,
         //         questionType:3,
         // 		stem: "How does this make you feel?",
-        //         image: "conflux/conflux/assets/images/pirates.png"
+        //         image: "conflux/assets/images/pirates.png"
         //     },
             {
                 id:17,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "assets/images/memiors.png"
+                image: "conflux/assets/images/memiors.png"
             },
             {
                 id:18,
