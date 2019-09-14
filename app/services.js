@@ -1026,7 +1026,7 @@ app.factory('dataSvc', function() {
         {
             id: 44,
             title:"A Star is Born",
-            poster:"/assets/images/astarisborn.png",
+            poster:"/conflux/assets/images/astarisborn.png",
             rating: "R",
             userRating:5,
             description:"",
@@ -1062,7 +1062,7 @@ app.factory('dataSvc', function() {
         {
             id: 46,
             title:"Eighth Grade",
-            poster:"/assets/images/eighthgrade.png",
+            poster:"/conflux/assets/images/eighthgrade.png",
             rating: "R",
             userRating:5,
             description:"",
