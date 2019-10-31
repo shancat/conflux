@@ -1588,91 +1588,91 @@ app.factory('dataSvc', function() {
                 id:3,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/lifeofpi.png"
+                image: "/conflux/assets/images/lifeofpi.png"
             },
             {
                 id:8,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/americanbeauty.png"
+                image: "/conflux/assets/images/americanbeauty.png"
             },
             {
                 id:9,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/et.png"
+                image: "/conflux/assets/images/et.png"
             },
             {
                 id:10,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/theshining.png"
+                image: "/conflux/assets/images/theshining.png"
             },
             {
                 id:11,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/lordoftherings.png"
+                image: "/conflux/assets/images/lordoftherings.png"
             },
             {
                 id:12,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/breakfastattiffanys.png"
+                image: "/conflux/assets/images/breakfastattiffanys.png"
             },
             {
                 id:13,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/thematrix.png"
+                image: "/conflux/assets/images/thematrix.png"
             },
             {
                 id:14,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/interstellar.png"
+                image: "/conflux/assets/images/interstellar.png"
             },
             {
                 id:15,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/panslabyrinth-scene.png"
+                image: "/conflux/assets/images/panslabyrinth-scene.png"
             },
         //     {
         //         id:16,
         //         questionType:3,
         // 		stem: "How does this make you feel?",
-        //         image: "conflux/assets/images/pirates.png"
+        //         image: "/conflux/assets/images/pirates.png"
         //     },
             {
                 id:17,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/memiors.png"
+                image: "/conflux/assets/images/memiors.png"
             },
             {
                 id:18,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/harryp.png"
+                image: "/conflux/assets/images/harryp.png"
             },
         //     {
         //         id:19,
         //         questionType:3,
         // 		stem: "How does this make you feel?",
-        //         image: "conflux/assets/images/soundofmusic.png"
+        //         image: "/conflux/assets/images/soundofmusic.png"
         //     },
             {
                 id:20,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/avatar.png"
+                image: "/conflux/assets/images/avatar.png"
             },
             {
                 id:21,
                 questionType:3,
         		stem: "How does this make you feel?",
-                image: "conflux/assets/images/madmax.png"
+                image: "/conflux/assets/images/madmax.png"
             }
         ];
         
@@ -1681,42 +1681,42 @@ app.factory('dataSvc', function() {
                 id:4,
                 questionType:4,
                 stem:"Go with your gut.",
-                images: ["conflux/assets/images/ModernFamily.png","conflux/assets/images/Parenthood.png","conflux/assets/images/FullerHouse.png","conflux/assets/images/FreshOffTheBoat.png"],
+                images: ["/conflux/assets/images/ModernFamily.png","/conflux/assets/images/Parenthood.png","/conflux/assets/images/FullerHouse.png","/conflux/assets/images/FreshOffTheBoat.png"],
                 category: "The Epitome of Dysfunctional Family TV"
             },
             {
                 id:35,
                 questionType:4,
                 stem:"Trust your instinct.",
-                images: ["conflux/assets/images/ringu.png","conflux/assets/images/theomen.png","conflux/assets/images/TheExorcist.png","conflux/assets/images/RosemarysBaby.png"],
+                images: ["/conflux/assets/images/ringu.png","/conflux/assets/images/theomen.png","/conflux/assets/images/TheExorcist.png","/conflux/assets/images/RosemarysBaby.png"],
                 category: "Slightly Vintage Scary Movies"
             },
             {
                 id:22,
                 questionType:4,
                 stem:"Quick yes or no.",
-                images: ["conflux/assets/images/astarisborn.png","conflux/assets/images/bohemianrhapsody.png","conflux/assets/images/thelastfiveyears.png","conflux/assets/images/lalaland.png"],
+                images: ["/conflux/assets/images/astarisborn.png","/conflux/assets/images/bohemianrhapsody.png","/conflux/assets/images/thelastfiveyears.png","/conflux/assets/images/lalaland.png"],
                 category: "Modern movie musicals"
             },
             {
                 id:23,
                 questionType:4,
                 stem:"Thumbs up, thumbs down.",
-                images: ["conflux/assets/images/Juno.png","conflux/assets/images/littlemisssunshine.png","conflux/assets/images/sunshinecleaning.png","conflux/assets/images/awaywego.png"],
+                images: ["/conflux/assets/images/Juno.png","/conflux/assets/images/littlemisssunshine.png","/conflux/assets/images/sunshinecleaning.png","/conflux/assets/images/awaywego.png"],
                 category: "Artsy movies but not in a pretentious way"
             },
             {
                 id:24,
                 questionType:4,
                 stem:"What does your gut say?",
-                images: ["conflux/assets/images/matrix.png","conflux/assets/images/inception.png","conflux/assets/images/shutterisland.png","conflux/assets/images/memento.png"],
+                images: ["/conflux/assets/images/matrix.png","/conflux/assets/images/inception.png","/conflux/assets/images/shutterisland.png","/conflux/assets/images/memento.png"],
                 category: "Movies you’ll need explained to you"
             },
             {
                 id:25,
                 questionType:4,
                 stem:"Think quick!",
-                images: ["conflux/assets/images/twilight.png","conflux/assets/images/harrypotter.png","conflux/assets/images/thecraft.png","conflux/assets/images/eragon.png"],
+                images: ["/conflux/assets/images/twilight.png","/conflux/assets/images/harrypotter.png","/conflux/assets/images/thecraft.png","/conflux/assets/images/eragon.png"],
                 category: "Some supernatural youths"
             }
         ];
@@ -1778,37 +1778,37 @@ app.factory('dataSvc', function() {
                 id:29,
                 questionType:8,
                 stem:"This or that?",
-                options: ["conflux/assets/images/ladybird.png","conflux/assets/images/Us.png"]
+                options: ["/conflux/assets/images/ladybird.png","/conflux/assets/images/Us.png"]
             },
             {
                 id:30,
                 questionType:8,
                 stem:"This or that?",
-                options: ["conflux/assets/images/vice.png","conflux/assets/images/Juno.png"]
+                options: ["/conflux/assets/images/vice.png","/conflux/assets/images/Juno.png"]
             },
             {
                 id:31,
                 questionType:8,
                 stem:"This or that?",
-                options: ["conflux/assets/images/Moonlight.png","conflux/assets/images/heathers.png"]
+                options: ["/conflux/assets/images/Moonlight.png","/conflux/assets/images/heathers.png"]
             },
             {
                 id:32,
                 questionType:8,
                 stem:"This or that?",
-                options: ["conflux/assets/images/TICKLED.png","conflux/assets/images/Joy.png"]
+                options: ["/conflux/assets/images/TICKLED.png","/conflux/assets/images/Joy.png"]
             },
             {
                 id:33,
                 questionType:8,
                 stem:"This or that?",
-                options: ["conflux/assets/images/lalaland.png","conflux/assets/images/ParanormalActivity.png"]
+                options: ["/conflux/assets/images/lalaland.png","/conflux/assets/images/ParanormalActivity.png"]
             },
             {
                 id:33,
                 questionType:8,
                 stem:"This or that?",
-                options: ["conflux/assets/images/littlemisssunshine.png","conflux/assets/images/inception.png"]
+                options: ["/conflux/assets/images/littlemisssunshine.png","/conflux/assets/images/inception.png"]
             }
         ];
         
